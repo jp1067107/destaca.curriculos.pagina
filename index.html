@@ -1,0 +1,1039 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth overflow-x-hidden">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destaca Currículos | Conquiste as Melhores Vagas</title>
+    <meta name="description" content="Hackeie os sistemas ATS e passe na regra dos 6 segundos. Receba seu currículo pronto em 2 modelos premium (PDF) escolhidos sob medida por apenas R$ 23.">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        heading: ['Outfit', 'sans-serif'],
+                    },
+                    colors: {
+                        navy: {
+                            900: '#0B132B',
+                            800: '#111D4A',
+                            700: '#1A2C6B',
+                            600: '#2A4396'
+                        },
+                        gold: {
+                            DEFAULT: '#D4AF37',
+                            light: '#F3E5AB',
+                            dark: '#AA8C2C',
+                        }
+                    },
+                    boxShadow: {
+                        'gold': '0 4px 20px -2px rgba(212, 175, 55, 0.3)',
+                        'gold-lg': '0 10px 30px -5px rgba(212, 175, 55, 0.4)',
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        body {
+            -webkit-font-smoothing: antialiased;
+        }
+        
+        .text-gradient-gold {
+            background: linear-gradient(135deg, #D4AF37 0%, #AA8C2C 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            color: transparent;
+        }
+        
+        .bg-gradient-gold {
+            background: linear-gradient(135deg, #E6C875 0%, #D4AF37 50%, #AA8C2C 100%);
+        }
+        
+        .btn-gold {
+            background: linear-gradient(135deg, #D4AF37 0%, #AA8C2C 100%);
+            color: #ffffff;
+            transition: all 0.3s ease;
+        }
+        
+        .btn-gold:hover {
+            box-shadow: 0 10px 25px -5px rgba(212, 175, 55, 0.5);
+            transform: translateY(-2px);
+            background: linear-gradient(135deg, #e5c048 0%, #b8972f 100%);
+        }
+        
+        .reveal {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.8s cubic-bezier(0.5, 0, 0, 1);
+        }
+        
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .img-placeholder {
+            background: linear-gradient(45deg, #f3f4f6, #e5e7eb);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #9ca3af;
+            font-size: 0.875rem;
+            text-align: center;
+        }
+    </style>
+</head>
+<body class="font-sans text-gray-800 bg-gray-50 overflow-x-hidden">
+
+    <!-- Navbar -->
+    <nav class="bg-white/90 backdrop-blur-md py-4 px-6 border-b border-gray-200 sticky top-0 z-50 transition-all duration-300" id="navbar">
+        <div class="max-w-6xl mx-auto flex justify-between items-center">
+            <!-- Insira a sua logo na mesma pasta com o nome logo.png ou ajuste o src -->
+            <img src="ChatGPT Image 14 de mai. de 2026, 12_48_46.png" alt="Destaca Currículos" class="h-12 object-contain" onerror="this.outerHTML='<div class=\'font-heading font-bold text-2xl text-navy-900 tracking-wide\'>DESTACA <span class=\'text-gold\'>CURRÍCULOS</span></div>'">
+            <a href="#oferta" class="hidden md:inline-flex btn-gold font-semibold py-2.5 px-6 rounded-full text-sm uppercase tracking-wide">
+                Garantir Meus Modelos
+            </a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative bg-navy-900 text-white pt-24 pb-16 md:pt-32 md:pb-28 px-6 overflow-hidden min-h-[90vh] flex items-center">
+        <!-- Abstract Background -->
+        <div class="absolute inset-0 opacity-10 pointer-events-none">
+            <div class="absolute w-[600px] h-[600px] bg-gold rounded-full blur-[120px] -top-40 -right-40"></div>
+            <div class="absolute w-[400px] h-[400px] bg-navy-600 rounded-full blur-[100px] top-40 -left-20"></div>
+        </div>
+
+        <div class="max-w-6xl mx-auto grid lg:grid-cols-2 gap-12 md:gap-16 items-center relative z-10 w-full">
+            <!-- Left Text -->
+            <div class="space-y-6 md:space-y-8 reveal active">
+                <div class="inline-block border border-gold/40 bg-gold/10 text-gold px-4 py-1.5 rounded-full text-xs font-bold tracking-widest uppercase shadow-lg shadow-gold/10">
+                    Chega de ser invisível
+                </div>
+                <h1 class="font-heading text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
+                    Você envia dezenas de currículos e <span class="text-gold">ninguém responde?</span>
+                </h1>
+                <p class="text-base md:text-lg text-gray-300 font-light leading-relaxed max-w-lg">
+                    O problema não é você — é o seu currículo. Robôs estão eliminando ele <strong class="text-white">antes de qualquer humano ler.</strong>
+                </p>
+                <p class="text-base md:text-lg text-gray-300 font-light leading-relaxed max-w-lg">
+                    Nós criamos do zero e entregamos <strong class="text-white">2 modelos premium em PDF</strong> — escolhidos sob medida para o seu perfil — prontos para furar a fila.
+                </p>
+                <div class="pt-2 md:pt-4">
+                    <a href="#oferta" class="btn-gold flex sm:inline-flex items-center justify-center gap-2 font-bold py-4 px-8 rounded-full text-base md:text-lg uppercase tracking-wide shadow-[0_10px_30px_rgba(212,175,55,0.3)] hover:-translate-y-1 transition-all">
+                        Quero Parar de Ser Ignorado <i data-lucide="arrow-right" class="w-5 h-5"></i>
+                    </a>
+                </div>
+                <div class="flex flex-col sm:flex-row items-start sm:items-center gap-3 pt-6 border-t border-white/10">
+                    <div class="flex -space-x-3">
+                        <img src="https://i.pravatar.cc/100?img=9" alt="User" class="w-10 h-10 rounded-full border-2 border-navy-900 object-cover">
+                        <img src="https://i.pravatar.cc/100?img=5" alt="User" class="w-10 h-10 rounded-full border-2 border-navy-900 object-cover">
+                        <img src="https://i.pravatar.cc/100?img=12" alt="User" class="w-10 h-10 rounded-full border-2 border-navy-900 object-cover">
+                    </div>
+                    <p class="text-sm text-gray-400">
+                        <strong class="text-white">+2.500 profissionais</strong> já pararam de ser ignorados.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Right Visual: Interactive Resume Stack -->
+            <div class="relative reveal active w-full flex justify-center mt-16 lg:mt-0 h-[300px] sm:h-[400px] md:h-[500px]">
+                <div class="relative w-full max-w-[280px] sm:max-w-[360px] md:max-w-[420px]">
+                    
+                    <img src="Ivone_Junqueira_Curriculo (3).png" alt="Modelo 4" class="absolute w-[70%] sm:w-[65%] right-20 sm:right-32 top-10 sm:top-24 shadow-2xl rounded-lg border border-white/10 transform -rotate-12 z-10 opacity-60 hover:-rotate-12 hover:scale-105 transition-all duration-300" />
+                    
+                    <img src="Ivone_Junqueira_Curriculo (2).png" alt="Modelo 3" class="absolute w-[70%] sm:w-[65%] right-12 sm:right-24 top-6 sm:top-16 shadow-2xl rounded-lg border border-white/10 transform -rotate-6 z-20 opacity-80 hover:-rotate-6 hover:scale-105 transition-all duration-300" />
+                    
+                    <img src="Ivone_Junqueira_Curriculo (1).png" alt="Modelo 2" class="absolute w-[70%] sm:w-[65%] right-6 sm:right-12 top-2 sm:top-8 shadow-2xl rounded-lg border border-white/10 transform rotate-0 z-30 opacity-95 hover:rotate-0 hover:scale-105 transition-all duration-300" />
+                    
+                    <img src="Ivone_Junqueira_Curriculo.png" alt="Modelo 1" class="absolute w-[70%] sm:w-[65%] right-0 top-0 shadow-[0_20px_50px_rgba(0,0,0,0.6)] rounded-lg border border-gold/40 transform rotate-6 z-40 hover:rotate-2 hover:scale-105 transition-all duration-300" />
+                    
+                    <!-- Dynamic ATS Scanner Badge -->
+                    <div class="absolute -bottom-8 md:bottom-0 -left-4 sm:-left-8 bg-white/10 backdrop-blur-xl border border-white/20 p-4 sm:p-5 rounded-2xl shadow-[0_20px_40px_rgba(0,0,0,0.4)] z-50 animate-[bounce_3s_infinite]">
+                        <div class="flex items-center gap-3 sm:gap-4">
+                            <div class="bg-gold p-2 sm:p-3 rounded-full shadow-lg shadow-gold/30">
+                                <i data-lucide="scan" class="w-5 h-5 sm:w-6 sm:h-6 text-navy-900"></i>
+                            </div>
+                            <div>
+                                <p class="text-[10px] sm:text-xs text-gold font-bold uppercase tracking-wider mb-0.5">Leitura de Robô ATS</p>
+                                <p class="text-xl sm:text-3xl font-bold text-white leading-none">99% Match</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Angle 1: ATS Systems -->
+    <section class="py-16 md:py-24 px-6 bg-white relative">
+        <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-16 items-center">
+            <div class="order-2 md:order-1 relative reveal">
+                <div class="absolute inset-0 bg-gold/10 transform -skew-x-12 rounded-3xl"></div>
+                <div class="relative bg-navy-900 rounded-3xl p-8 shadow-xl text-white">
+                    <div class="flex items-center gap-4 mb-6 pb-6 border-b border-white/10">
+                        <div class="w-12 h-12 rounded-full bg-red-500/20 flex items-center justify-center text-red-400">
+                            <i data-lucide="bot" class="w-6 h-6"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-lg">Simulação de Triagem ATS</h4>
+                            <p class="text-xs text-gray-400">O que acontece antes de qualquer humano ver seu currículo</p>
+                        </div>
+                    </div>
+                    <div class="space-y-4 text-sm text-gray-300">
+                        <div class="flex justify-between items-center bg-white/5 p-3 rounded-lg border border-red-500/30">
+                            <span>Currículo feito no Canva</span>
+                            <span class="text-red-400 font-bold">❌ Eliminado</span>
+                        </div>
+                        <div class="flex justify-between items-center bg-white/5 p-3 rounded-lg border border-red-500/30">
+                            <span>Modelo genérico da internet</span>
+                            <span class="text-red-400 font-bold">❌ Eliminado</span>
+                        </div>
+                        <div class="flex justify-between items-center bg-white/5 p-3 rounded-lg border border-red-500/30">
+                            <span>PDF sem palavras-chave</span>
+                            <span class="text-red-400 font-bold">❌ Eliminado</span>
+                        </div>
+                        <div class="flex justify-between items-center bg-green-500/20 p-3 rounded-lg border border-green-500/50 shadow-lg shadow-green-500/30">
+                            <span class="text-white font-medium">Currículo Destaca Currículos</span>
+                            <span class="text-green-500 font-bold flex items-center gap-1"><i data-lucide="check-circle" class="w-4 h-4"></i> Aprovado</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="order-1 md:order-2 space-y-6 reveal">
+                <div class="flex items-center gap-2 text-navy-600 font-bold tracking-wider uppercase text-sm">
+                    <i data-lucide="cpu" class="w-5 h-5"></i> O Inimigo Invisível
+                </div>
+                <h2 class="font-heading text-3xl md:text-4xl font-bold text-navy-900">
+                    Existe um robô eliminando seu currículo — e você nem sabe.
+                </h2>
+                <p class="text-gray-600 leading-relaxed text-lg mb-8">
+                    <strong>75% dos currículos são eliminados por robôs (ATS)</strong> antes de qualquer humano ler. O seu pode ser um deles.
+                </p>
+                <div class="grid grid-cols-3 gap-3 md:gap-4">
+                    <div class="bg-red-50 border border-red-200 rounded-xl p-4 text-center">
+                        <div class="w-10 h-10 rounded-full bg-red-100 flex items-center justify-center mx-auto mb-2 text-red-500"><i data-lucide="x-circle" class="w-5 h-5"></i></div>
+                        <p class="font-bold text-navy-900 text-sm">Canva / Word</p>
+                        <p class="text-xs text-red-500 mt-1">Robô não lê</p>
+                    </div>
+                    <div class="bg-red-50 border border-red-200 rounded-xl p-4 text-center">
+                        <div class="w-10 h-10 rounded-full bg-red-100 flex items-center justify-center mx-auto mb-2 text-red-500"><i data-lucide="x-circle" class="w-5 h-5"></i></div>
+                        <p class="font-bold text-navy-900 text-sm">Sem palavras-chave</p>
+                        <p class="text-xs text-red-500 mt-1">Robô ignora</p>
+                    </div>
+                    <div class="bg-green-50 border border-green-300 rounded-xl p-4 text-center shadow-md">
+                        <div class="w-10 h-10 rounded-full bg-green-100 flex items-center justify-center mx-auto mb-2 text-green-600"><i data-lucide="check-circle" class="w-5 h-5"></i></div>
+                        <p class="font-bold text-navy-900 text-sm">Destaca Currículos</p>
+                        <p class="text-xs text-green-600 mt-1 font-semibold">Robô aprova</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Angle 2: 6 Second Rule -->
+    <section class="py-16 md:py-24 px-6 bg-gray-50 border-y border-gray-200">
+        <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-16 items-center">
+            <div class="space-y-6 reveal">
+                <div class="flex items-center gap-2 text-gold-dark font-bold tracking-wider uppercase text-sm">
+                    <i data-lucide="timer" class="w-5 h-5"></i> A Verdade que Ninguém Te Conta
+                </div>
+                <h2 class="font-heading text-3xl md:text-4xl font-bold text-navy-900">
+                    O recrutador decide o seu futuro em 6 segundos. Literalmente.
+                </h2>
+                <p class="text-gray-600 leading-relaxed text-lg">
+                    Recrutadores com 200 currículos na tela gastam <strong>6 segundos</strong> no seu. Se o design não entrega valor imediato — <strong>acabou.</strong>
+                </p>
+                <ul class="space-y-4 mt-6">
+                    <li class="flex items-start gap-3">
+                        <i data-lucide="check" class="w-6 h-6 text-gold flex-shrink-0"></i>
+                        <span class="text-gray-700"><strong>Leitura em Padrão F:</strong> Nosso layout posiciona suas maiores conquistas exatamente onde o olho humano bate primeiro.</span>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <i data-lucide="check" class="w-6 h-6 text-gold flex-shrink-0"></i>
+                        <span class="text-gray-700"><strong>PDF à prova de falhas:</strong> Entregamos em PDF para que abra perfeito em qualquer computador, celular ou sistema — sem desconfigurar jamais.</span>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <i data-lucide="check" class="w-6 h-6 text-gold flex-shrink-0"></i>
+                        <span class="text-gray-700"><strong>Hierarquia Estratégica:</strong> Nome, cargo-alvo e conquistas no topo. O recrutador vê valor imediato e quer saber mais.</span>
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="relative reveal">
+                <div class="bg-white p-2 rounded-2xl shadow-xl border border-gray-100">
+                    <!-- Placeholder para visual de Eye Tracking ou imagem de um dos modelos -->
+                    <img src="Ivone_Junqueira_Curriculo (3).png" alt="Análise Visual" class="w-full rounded-xl opacity-90" onerror="this.outerHTML='<div class=\'w-full h-80 rounded-xl img-placeholder bg-gray-100 text-gray-500 flex-col gap-4\'> <i data-lucide=\'eye\' class=\'w-12 h-12\'></i> [Ilustração de Leitura Visual / Modelo 4]</div>'">
+                </div>
+                <!-- Badge -->
+                <div class="absolute -bottom-4 -left-4 md:-bottom-6 md:-left-6 bg-navy-900 text-white p-4 md:p-6 rounded-xl md:rounded-2xl shadow-lg border border-navy-700 max-w-[140px] md:max-w-[200px] z-10">
+                    <div class="text-2xl md:text-3xl font-heading font-bold text-gold mb-0.5 md:mb-1">6s</div>
+                    <div class="text-xs md:text-sm text-gray-300 leading-tight">É tudo o que você tem. Faça valer.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Transformação Interativa -->
+    <section class="py-16 md:py-24 px-6 bg-navy-900 border-y border-white/10 relative overflow-hidden">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center max-w-3xl mx-auto mb-12 reveal">
+                <div class="inline-flex items-center gap-2 border border-gold/40 bg-gold/10 text-gold px-4 py-1.5 rounded-full text-xs font-bold tracking-widest uppercase mb-6 shadow-lg shadow-gold/10">
+                    <i data-lucide="sparkles" class="w-4 h-4"></i> A Transformação
+                </div>
+                <h2 class="font-heading text-3xl md:text-5xl font-bold text-white mb-6">
+                    A diferença entre ser ignorado e <span class="text-gold">ser contratado</span>
+                </h2>
+                <p class="text-gray-300 text-lg">
+                    Arraste o botão para os lados e veja a transformação de um currículo comum para um de nossos modelos de alto impacto.
+                </p>
+            </div>
+            
+            <div class="max-w-3xl mx-auto relative reveal">
+                <div class="relative w-full rounded-xl sm:rounded-2xl shadow-[0_20px_50px_rgba(0,0,0,0.5)] border-4 border-white/10 before-after-container bg-white" style="aspect-ratio: 1 / 1.414;">
+                    <div class="absolute inset-0 rounded-[10px] sm:rounded-[14px] overflow-hidden">
+                        <!-- Imagem Antes (Fundo) -->
+                        <img src="Curriculo ruim.png" alt="Currículo Antes" class="absolute inset-0 w-full h-full object-contain sm:object-cover sm:object-top pointer-events-none opacity-90" />
+                        
+                        <!-- Imagem Depois (Cima com clip-path) -->
+                        <img src="Ivone_Junqueira_Curriculo (1).png" alt="Currículo Depois" class="absolute inset-0 w-full h-full object-contain sm:object-cover sm:object-top pointer-events-none before-after-overlay z-10" style="clip-path: polygon(0 0, 0% 0, 0% 100%, 0 100%);" />
+                    </div>
+                    
+                    <!-- Handle Slider -->
+                    <div class="absolute inset-y-0 left-0 -ml-5 w-10 flex items-center justify-center cursor-ew-resize before-after-slider z-20" style="left: 0%;">
+                        <div class="absolute inset-y-0 left-1/2 w-1 bg-gold -ml-[2px] shadow-[0_0_10px_rgba(0,0,0,0.5)]"></div>
+                        
+                        <!-- Pulsing Message -->
+                        <div id="drag-hint" class="absolute left-12 md:left-14 top-1/2 -translate-y-1/2 bg-navy-900 text-white text-xs md:text-sm font-bold px-3 py-2 md:px-4 md:py-2.5 rounded-xl shadow-2xl whitespace-nowrap flex items-center gap-2 animate-[pulse_1.5s_ease-in-out_infinite] border border-gold/30 pointer-events-none transition-opacity duration-500 z-40">
+                            Arraste para ver o novo <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                        </div>
+
+                        <div class="w-10 h-10 bg-gold rounded-full shadow-[0_0_15px_rgba(0,0,0,0.6)] flex items-center justify-center text-navy-900 relative z-30 border-4 border-white transition-transform hover:scale-110 active:scale-95">
+                            <i data-lucide="chevrons-left-right" class="w-5 h-5"></i>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="flex justify-between items-center text-[10px] sm:text-sm mt-6 font-bold tracking-widest uppercase w-full">
+                    <span id="label-novo" class="text-gray-500 flex items-center gap-1 sm:gap-2 transition-colors duration-300"><i data-lucide="check-circle" class="w-3 h-3 sm:w-4 sm:h-4"></i> O Novo (Aprovado)</span>
+                    <span id="label-velho" class="text-red-500 flex items-center gap-1 sm:gap-2 transition-colors duration-300">O Velho (Ignorado) <i data-lucide="x-circle" class="w-3 h-3 sm:w-4 sm:h-4"></i></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Angle 3: Models Section -->
+    <section class="py-16 md:py-24 px-6 bg-white" id="modelos">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center max-w-3xl mx-auto mb-16 reveal">
+                <h2 class="font-heading text-3xl md:text-5xl font-bold text-navy-900 mb-6">
+                    Enquanto outros vendem 1 modelo por R$ 150, nós entregamos <span class="text-gradient-gold">2 por R$ 23.</span>
+                </h2>
+                <p class="text-gray-600 text-lg">
+                    Temos um arsenal de modelos de alto impacto — e <strong>nós escolhemos os 2 ideais para o seu perfil, área e tipo de empresa que você quer atingir.</strong> Multinacional conservadora? Startup descolada? Nós sabemos qual modelo funciona melhor. Você só precisa enviar suas informações.
+                </p>
+            </div>
+
+            <!-- Carousel of Models -->
+            <div class="relative max-w-md md:max-w-lg mx-auto reveal pb-8">
+                <div class="overflow-hidden rounded-2xl">
+                    <div id="models-carousel" class="flex transition-transform duration-500 ease-in-out items-start">
+                        <!-- Slide 1 -->
+                        <div class="w-full flex-shrink-0 px-2 sm:px-4">
+                            <div class="bg-gray-100 rounded-2xl p-2 shadow-lg border border-transparent hover:border-gold/30 transition-all duration-300">
+                                <img src="Ivone_Junqueira_Curriculo.png" alt="Modelo Executivo" class="w-full h-auto rounded-xl">
+                            </div>
+                            <div class="mt-6 px-2 sm:px-4">
+                                <h3 class="text-center font-bold text-navy-900 font-heading text-2xl mb-2">O Executivo</h3>
+                                <p class="text-center text-gray-600">Para bancos, consultorias e cargos de liderança. Sóbrio e imponente.</p>
+                            </div>
+                        </div>
+                        
+                        <!-- Slide 2 -->
+                        <div class="w-full flex-shrink-0 px-2 sm:px-4">
+                            <div class="bg-gray-100 rounded-2xl p-2 shadow-lg border border-transparent hover:border-gold/30 transition-all duration-300">
+                                <img src="Ivone_Junqueira_Curriculo (1).png" alt="Modelo Moderno" class="w-full h-auto rounded-xl">
+                            </div>
+                            <div class="mt-6 px-2 sm:px-4">
+                                <h3 class="text-center font-bold text-navy-900 font-heading text-2xl mb-2">O Moderno</h3>
+                                <p class="text-center text-gray-600">Sidebar elegante, ideal para startups, tech e marketing.</p>
+                            </div>
+                        </div>
+
+                        <!-- Slide 3 -->
+                        <div class="w-full flex-shrink-0 px-2 sm:px-4">
+                            <div class="bg-gray-100 rounded-2xl p-2 shadow-lg border border-transparent hover:border-gold/30 transition-all duration-300">
+                                <img src="Ivone_Junqueira_Curriculo (2).png" alt="Modelo Estrategista" class="w-full h-auto rounded-xl">
+                            </div>
+                            <div class="mt-6 px-2 sm:px-4">
+                                <h3 class="text-center font-bold text-navy-900 font-heading text-2xl mb-2">O Estrategista</h3>
+                                <p class="text-center text-gray-600">Foco em trajetória e resultados. Perfeito para quem tem histórico forte.</p>
+                            </div>
+                        </div>
+
+                        <!-- Slide 4 -->
+                        <div class="w-full flex-shrink-0 px-2 sm:px-4">
+                            <div class="bg-gray-100 rounded-2xl p-2 shadow-lg border border-transparent hover:border-gold/30 transition-all duration-300">
+                                <img src="Ivone_Junqueira_Curriculo (3).png" alt="Modelo Versátil" class="w-full h-auto rounded-xl">
+                            </div>
+                            <div class="mt-6 px-2 sm:px-4">
+                                <h3 class="text-center font-bold text-navy-900 font-heading text-2xl mb-2">O Versátil</h3>
+                                <p class="text-center text-gray-600">O coringa que funciona em qualquer setor. Limpo, direto e confiável.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Controls -->
+                <button id="prev-model" class="absolute top-[35%] -left-2 md:-left-12 -translate-y-1/2 bg-white rounded-full p-3 shadow-lg text-navy-900 hover:text-gold transition-colors z-10 focus:outline-none border border-gray-100"><i data-lucide="chevron-left" class="w-6 h-6"></i></button>
+                <button id="next-model" class="absolute top-[35%] -right-2 md:-right-12 -translate-y-1/2 bg-white rounded-full p-3 shadow-lg text-navy-900 hover:text-gold transition-colors z-10 focus:outline-none border border-gray-100"><i data-lucide="chevron-right" class="w-6 h-6"></i></button>
+                
+                <!-- Indicators -->
+                <div class="flex justify-center gap-3 mt-6" id="model-indicators">
+                    <button class="w-3 h-3 rounded-full bg-gold transition-colors focus:outline-none" data-slide="0"></button>
+                    <button class="w-3 h-3 rounded-full bg-gray-300 hover:bg-gray-400 transition-colors focus:outline-none" data-slide="1"></button>
+                    <button class="w-3 h-3 rounded-full bg-gray-300 hover:bg-gray-400 transition-colors focus:outline-none" data-slide="2"></button>
+                    <button class="w-3 h-3 rounded-full bg-gray-300 hover:bg-gray-400 transition-colors focus:outline-none" data-slide="3"></button>
+                </div>
+            </div>
+
+            <!-- CTA Mid-Page -->
+            <div class="text-center mt-16 reveal">
+                <p class="text-gray-500 mb-4">Você recebe 2 modelos escolhidos sob medida, prontos. Sem preencher nada. Sem editar nada.</p>
+                <a href="#oferta" class="btn-gold inline-flex items-center justify-center gap-2 font-bold py-4 px-8 rounded-full text-lg uppercase tracking-wide">
+                    Quero Meus 2 PDFs por R$ 23 <i data-lucide="arrow-right" class="w-5 h-5"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Angle 4: Social Proof -->
+    <section class="py-12 md:py-20 px-6 bg-gray-50 border-y border-gray-200">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-14 reveal">
+                <h2 class="font-heading text-3xl md:text-4xl font-bold text-navy-900 mb-4">O que dizem quem já se destacou</h2>
+                <p class="text-gray-500">Resultados reais de pessoas que pararam de ser ignoradas.</p>
+            </div>
+            <div class="relative reveal max-w-4xl mx-auto">
+                <div class="overflow-hidden relative rounded-2xl">
+                    <div id="testimonial-carousel" class="flex transition-transform duration-500 ease-in-out">
+                        <!-- Slide 1 -->
+                        <div class="w-full flex-shrink-0 px-2 md:px-12">
+                            <div class="bg-white rounded-2xl p-8 shadow-md border border-gray-100 mx-auto max-w-2xl text-center">
+                                <div class="flex justify-center items-center gap-1 text-gold mb-6"><i data-lucide="star" class="w-5 h-5 fill-current"></i><i data-lucide="star" class="w-5 h-5 fill-current"></i><i data-lucide="star" class="w-5 h-5 fill-current"></i><i data-lucide="star" class="w-5 h-5 fill-current"></i><i data-lucide="star" class="w-5 h-5 fill-current"></i></div>
+                                <p class="text-gray-600 text-lg md:text-xl mb-8 leading-relaxed italic">"Enviei mais de 50 currículos e não recebia nenhuma resposta. Depois de refazer com a Destaca, fui chamada para <strong>3 entrevistas na mesma semana</strong>. O problema nunca foi minha experiência — era o currículo."</p>
+                                <div class="flex flex-col items-center gap-3 pt-6 border-t border-gray-100">
+                                    <img src="https://i.pravatar.cc/100?img=32" alt="Juliana" class="w-14 h-14 rounded-full object-cover shadow-sm">
+                                    <div><p class="font-bold text-navy-900 text-lg">Juliana M.</p><p class="text-sm text-gray-400">Analista de Marketing</p></div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Slide 2 -->
+                        <div class="w-full flex-shrink-0 px-2 md:px-12">
+                            <div class="bg-white rounded-2xl p-8 shadow-md border border-gray-100 mx-auto max-w-2xl text-center">
+                                <div class="flex justify-center items-center gap-1 text-gold mb-6"><i data-lucide="star" class="w-5 h-5 fill-current"></i><i data-lucide="star" class="w-5 h-5 fill-current"></i><i data-lucide="star" class="w-5 h-5 fill-current"></i><i data-lucide="star" class="w-5 h-5 fill-current"></i><i data-lucide="star" class="w-5 h-5 fill-current"></i></div>
+                                <p class="text-gray-600 text-lg md:text-xl mb-8 leading-relaxed italic">"R$ 23 e eles escolheram os modelos certos pra mim. Eu tinha pago R$ 250 numa 'consultora de carreira' que me entregou um Word genérico. Aqui recebi <strong>2 PDFs impecáveis e personalizados</strong>. Sem comparação."</p>
+                                <div class="flex flex-col items-center gap-3 pt-6 border-t border-gray-100">
+                                    <img src="https://i.pravatar.cc/100?img=11" alt="Ricardo" class="w-14 h-14 rounded-full object-cover shadow-sm">
+                                    <div><p class="font-bold text-navy-900 text-lg">Ricardo S.</p><p class="text-sm text-gray-400">Engenheiro Civil</p></div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Slide 3 -->
+                        <div class="w-full flex-shrink-0 px-2 md:px-12">
+                            <div class="bg-white rounded-2xl p-8 shadow-md border border-gray-100 mx-auto max-w-2xl text-center">
+                                <div class="flex justify-center items-center gap-1 text-gold mb-6"><i data-lucide="star" class="w-5 h-5 fill-current"></i><i data-lucide="star" class="w-5 h-5 fill-current"></i><i data-lucide="star" class="w-5 h-5 fill-current"></i><i data-lucide="star" class="w-5 h-5 fill-current"></i><i data-lucide="star" class="w-5 h-5 fill-current"></i></div>
+                                <p class="text-gray-600 text-lg md:text-xl mb-8 leading-relaxed italic">"Estava desempregada há 8 meses. Achava que era o mercado. Refiz meu currículo com a Destaca e em <strong>menos de 2 semanas já estava empregada</strong>. Era o currículo o tempo todo."</p>
+                                <div class="flex flex-col items-center gap-3 pt-6 border-t border-gray-100">
+                                    <div><p class="font-bold text-navy-900 text-lg">Camila R.</p><p class="text-sm text-gray-400">Assistente Administrativa</p></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Controls -->
+                <button id="prev-testimonial" class="absolute top-1/2 -left-2 md:left-0 -translate-y-1/2 bg-white rounded-full p-3 shadow-lg text-navy-900 hover:text-gold transition-colors z-10 focus:outline-none"><i data-lucide="chevron-left" class="w-6 h-6"></i></button>
+                <button id="next-testimonial" class="absolute top-1/2 -right-2 md:right-0 -translate-y-1/2 bg-white rounded-full p-3 shadow-lg text-navy-900 hover:text-gold transition-colors z-10 focus:outline-none"><i data-lucide="chevron-right" class="w-6 h-6"></i></button>
+                
+                <!-- Indicators -->
+                <div class="flex justify-center gap-3 mt-8" id="testimonial-indicators">
+                    <button class="w-3 h-3 rounded-full bg-gold transition-colors focus:outline-none" data-slide="0"></button>
+                    <button class="w-3 h-3 rounded-full bg-gray-300 hover:bg-gray-400 transition-colors focus:outline-none" data-slide="1"></button>
+                    <button class="w-3 h-3 rounded-full bg-gray-300 hover:bg-gray-400 transition-colors focus:outline-none" data-slide="2"></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Como Funciona - Passo a Passo Visual -->
+    <section class="py-16 md:py-24 px-6 bg-white border-b border-gray-200">
+        <div class="max-w-5xl mx-auto">
+            <div class="text-center max-w-3xl mx-auto mb-16 reveal">
+                <div class="inline-flex items-center gap-2 border border-navy-600/30 bg-navy-900/5 text-navy-700 px-4 py-1.5 rounded-full text-xs font-bold tracking-widest uppercase mb-6">
+                    <i data-lucide="list-checks" class="w-4 h-4"></i> Simples e Rápido
+                </div>
+                <h2 class="font-heading text-3xl md:text-5xl font-bold text-navy-900 mb-4">
+                    Como funciona? <span class="text-gradient-gold">4 passos.</span>
+                </h2>
+                <p class="text-gray-500 text-lg">Da compra à entrega, tudo acontece de forma rápida e transparente.</p>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8 reveal">
+                <!-- Passo 1 -->
+                <div class="relative bg-gray-50 rounded-2xl p-6 md:p-8 border border-gray-100 text-center group hover:border-gold/30 hover:shadow-lg transition-all duration-300">
+                    <div class="absolute -top-4 left-1/2 -translate-x-1/2 w-8 h-8 bg-gold rounded-full flex items-center justify-center text-navy-900 font-bold text-sm shadow-md">1</div>
+                    <div class="w-14 h-14 rounded-2xl bg-gold/10 flex items-center justify-center mx-auto mb-4 mt-2 text-gold group-hover:bg-gold group-hover:text-navy-900 transition-colors duration-300">
+                        <i data-lucide="shopping-cart" class="w-7 h-7"></i>
+                    </div>
+                    <h4 class="font-heading font-bold text-navy-900 text-lg mb-2">Compre no checkout</h4>
+                    <p class="text-gray-500 text-sm leading-relaxed">Pagamento seguro via Pix ou cartão. Aprovação instantânea.</p>
+                </div>
+
+                <!-- Passo 2 -->
+                <div class="relative bg-gray-50 rounded-2xl p-6 md:p-8 border border-gray-100 text-center group hover:border-gold/30 hover:shadow-lg transition-all duration-300">
+                    <div class="absolute -top-4 left-1/2 -translate-x-1/2 w-8 h-8 bg-gold rounded-full flex items-center justify-center text-navy-900 font-bold text-sm shadow-md">2</div>
+                    <div class="w-14 h-14 rounded-2xl bg-gold/10 flex items-center justify-center mx-auto mb-4 mt-2 text-gold group-hover:bg-gold group-hover:text-navy-900 transition-colors duration-300">
+                        <i data-lucide="message-circle" class="w-7 h-7"></i>
+                    </div>
+                    <h4 class="font-heading font-bold text-navy-900 text-lg mb-2">Fale conosco no WhatsApp</h4>
+                    <p class="text-gray-500 text-sm leading-relaxed">Você será direcionado ao nosso WhatsApp para enviar suas informações.</p>
+                </div>
+
+                <!-- Passo 3 -->
+                <div class="relative bg-gray-50 rounded-2xl p-6 md:p-8 border border-gray-100 text-center group hover:border-gold/30 hover:shadow-lg transition-all duration-300">
+                    <div class="absolute -top-4 left-1/2 -translate-x-1/2 w-8 h-8 bg-gold rounded-full flex items-center justify-center text-navy-900 font-bold text-sm shadow-md">3</div>
+                    <div class="w-14 h-14 rounded-2xl bg-gold/10 flex items-center justify-center mx-auto mb-4 mt-2 text-gold group-hover:bg-gold group-hover:text-navy-900 transition-colors duration-300">
+                        <i data-lucide="pencil-ruler" class="w-7 h-7"></i>
+                    </div>
+                    <h4 class="font-heading font-bold text-navy-900 text-lg mb-2">Nós criamos tudo</h4>
+                    <p class="text-gray-500 text-sm leading-relaxed">Analisamos seu perfil e criamos o currículo do zero nos modelos ideais pra você.</p>
+                </div>
+
+                <!-- Passo 4 -->
+                <div class="relative bg-gray-50 rounded-2xl p-6 md:p-8 border border-gray-100 text-center group hover:border-gold/30 hover:shadow-lg transition-all duration-300">
+                    <div class="absolute -top-4 left-1/2 -translate-x-1/2 w-8 h-8 bg-gold rounded-full flex items-center justify-center text-navy-900 font-bold text-sm shadow-md">4</div>
+                    <div class="w-14 h-14 rounded-2xl bg-gold/10 flex items-center justify-center mx-auto mb-4 mt-2 text-gold group-hover:bg-gold group-hover:text-navy-900 transition-colors duration-300">
+                        <i data-lucide="file-check" class="w-7 h-7"></i>
+                    </div>
+                    <h4 class="font-heading font-bold text-navy-900 text-lg mb-2">Receba seus PDFs</h4>
+                    <p class="text-gray-500 text-sm leading-relaxed">Em até 24h, seus 2 currículos profissionais chegam direto no WhatsApp.</p>
+                </div>
+            </div>
+
+            <!-- Garantia inline -->
+            <div class="mt-12 text-center reveal">
+                <div class="inline-flex items-center gap-3 bg-green-50 border border-green-200 rounded-full px-6 py-3">
+                    <i data-lucide="shield-check" class="w-5 h-5 text-green-600"></i>
+                    <span class="text-green-700 font-semibold text-sm">Garantia de 7 dias: se não gostar, devolvemos 100% do seu dinheiro.</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-16 md:py-24 px-6 bg-white">
+        <div class="max-w-3xl mx-auto">
+            <div class="text-center mb-14 reveal">
+                <h2 class="font-heading text-3xl md:text-4xl font-bold text-navy-900 mb-4">Perguntas que você está pensando agora</h2>
+            </div>
+            <div class="space-y-6 reveal">
+                <details class="bg-gray-50 rounded-2xl p-6 border border-gray-100 group" open>
+                    <summary class="flex justify-between items-center cursor-pointer font-heading font-bold text-navy-900 text-lg">"R$ 23 por 2 modelos? Qual é o truque?"
+                        <i data-lucide="chevron-down" class="w-5 h-5 text-gray-400 transition-transform group-open:rotate-180"></i>
+                    </summary>
+                    <p class="mt-4 text-gray-600 leading-relaxed">Nenhum. Nosso modelo é volume: preço justo para muitas pessoas. <strong>R$ 23, 2 PDFs escolhidos sob medida, sem taxa escondida.</strong></p>
+                </details>
+                <details class="bg-gray-50 rounded-2xl p-6 border border-gray-100 group">
+                    <summary class="flex justify-between items-center cursor-pointer font-heading font-bold text-navy-900 text-lg">"Vocês fazem tudo ou eu que preencho?"
+                        <i data-lucide="chevron-down" class="w-5 h-5 text-gray-400 transition-transform group-open:rotate-180"></i>
+                    </summary>
+                    <p class="mt-4 text-gray-600 leading-relaxed">Tudo. Após a compra, você será direcionado ao nosso WhatsApp para enviar suas informações → nós montamos, otimizamos e entregamos os <strong>2 PDFs prontos direto no seu WhatsApp.</strong></p>
+                </details>
+                <details class="bg-gray-50 rounded-2xl p-6 border border-gray-100 group">
+                    <summary class="flex justify-between items-center cursor-pointer font-heading font-bold text-navy-900 text-lg">"Funciona pra qualquer área?"
+                        <i data-lucide="chevron-down" class="w-5 h-5 text-gray-400 transition-transform group-open:rotate-180"></i>
+                    </summary>
+                    <p class="mt-4 text-gray-600 leading-relaxed">Sim. De estagiários a gerentes, TI a direito. <strong>Nós escolhemos os modelos ideais para a sua área.</strong></p>
+                </details>
+                <details class="bg-gray-50 rounded-2xl p-6 border border-gray-100 group">
+                    <summary class="flex justify-between items-center cursor-pointer font-heading font-bold text-navy-900 text-lg">"Por que PDF e não Word editável?"
+                        <i data-lucide="chevron-down" class="w-5 h-5 text-gray-400 transition-transform group-open:rotate-180"></i>
+                    </summary>
+                    <p class="mt-4 text-gray-600 leading-relaxed">PDF nunca desconfigura. Abre perfeito em qualquer dispositivo. <strong>É o formato que recrutadores pedem.</strong></p>
+                </details>
+                <details class="bg-gray-50 rounded-2xl p-6 border border-gray-100 group">
+                    <summary class="flex justify-between items-center cursor-pointer font-heading font-bold text-navy-900 text-lg">"Em quanto tempo eu recebo?"
+                        <i data-lucide="chevron-down" class="w-5 h-5 text-gray-400 transition-transform group-open:rotate-180"></i>
+                    </summary>
+                    <p class="mt-4 text-gray-600 leading-relaxed">Até <strong>24h úteis</strong> após o envio das suas informações. Muitas vezes no mesmo dia. Entrega direto no seu WhatsApp.</p>
+                </details>
+                <details class="bg-gray-50 rounded-2xl p-6 border border-gray-100 group">
+                    <summary class="flex justify-between items-center cursor-pointer font-heading font-bold text-navy-900 text-lg">"E se eu não gostar do resultado?"
+                        <i data-lucide="chevron-down" class="w-5 h-5 text-gray-400 transition-transform group-open:rotate-180"></i>
+                    </summary>
+                    <p class="mt-4 text-gray-600 leading-relaxed">Você tem <strong>7 dias de garantia incondicional.</strong> Se por qualquer motivo não ficar satisfeito, devolvemos 100% do valor. Sem perguntas, sem burocracia.</p>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final Offer / Pricing -->
+    <section id="oferta" class="py-16 md:py-24 px-6 bg-navy-900 relative">
+        <div class="max-w-4xl mx-auto relative z-10 reveal">
+            <div class="bg-white rounded-[2rem] p-8 md:p-14 shadow-2xl relative overflow-hidden">
+                <!-- Ribbon -->
+                <div class="absolute top-10 -right-14 w-64 text-center bg-navy-900 text-gold font-bold py-1.5 rotate-45 text-[11px] md:text-xs uppercase tracking-wider shadow-md z-0">
+                    Único no Mercado
+                </div>
+                
+                <div class="text-center mb-10 mt-12 md:mt-0 relative z-10">
+                    <h2 class="font-heading text-3xl md:text-5xl font-bold text-navy-900 mb-4">Pare de se candidatar no escuro.</h2>
+                    <p class="text-gray-600 text-lg">Cada dia com o currículo errado é uma entrevista que você perdeu. Cada semana é um salário que não entrou. Quanto tempo mais você vai esperar?</p>
+                </div>
+                
+                <div class="flex flex-col md:flex-row justify-between items-center gap-8 mb-10 border-b border-gray-200 pb-10">
+                    <div>
+                        <h3 class="text-2xl font-bold text-navy-900 mb-2">Criação Completa do Seu Currículo</h3>
+                        <p class="text-gray-500">Entregue em 2 Designs Escolhidos Sob Medida — Tudo em PDF Profissional via WhatsApp</p>
+                    </div>
+                    <div class="text-right">
+                        <p class="text-gray-400 line-through text-lg">Consultorias cobram R$ 200+</p>
+                        <div class="text-6xl font-heading font-bold text-navy-900">R$ 23<span class="text-2xl">,00</span></div>
+                        <p class="text-xs text-gold-dark font-bold mt-1">Menos que um lanche. Mais que um emprego.</p>
+                    </div>
+                </div>
+                
+                <div class="grid md:grid-cols-2 gap-6 mb-10 text-gray-700">
+                    <ul class="space-y-4">
+                        <li class="flex items-center gap-3">
+                            <div class="w-6 h-6 rounded-full bg-gold/20 flex items-center justify-center flex-shrink-0 text-gold-dark"><i data-lucide="check" class="w-4 h-4"></i></div>
+                            <span>Nós criamos <strong>100% do currículo pra você</strong></span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <div class="w-6 h-6 rounded-full bg-gold/20 flex items-center justify-center flex-shrink-0 text-gold-dark"><i data-lucide="check" class="w-4 h-4"></i></div>
+                            <span><strong>2 Modelos PDF</strong> escolhidos sob medida para seu perfil</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <div class="w-6 h-6 rounded-full bg-gold/20 flex items-center justify-center flex-shrink-0 text-gold-dark"><i data-lucide="check" class="w-4 h-4"></i></div>
+                            <span>Estrutura otimizada para passar nos <strong>filtros ATS</strong></span>
+                        </li>
+                    </ul>
+                    <ul class="space-y-4">
+                        <li class="flex items-center gap-3">
+                            <div class="w-6 h-6 rounded-full bg-gold/20 flex items-center justify-center flex-shrink-0 text-gold-dark"><i data-lucide="check" class="w-4 h-4"></i></div>
+                            <span>Layout baseado na <strong>regra dos 6 segundos</strong></span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <div class="w-6 h-6 rounded-full bg-gold/20 flex items-center justify-center flex-shrink-0 text-gold-dark"><i data-lucide="check" class="w-4 h-4"></i></div>
+                            <span>Entrega <strong>direta e humanizada</strong> via WhatsApp</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <div class="w-6 h-6 rounded-full bg-gold/20 flex items-center justify-center flex-shrink-0 text-gold-dark"><i data-lucide="check" class="w-4 h-4"></i></div>
+                            <span>Entrega em até <strong>24 horas úteis</strong></span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- Urgência tangível -->
+                <div class="bg-amber-50 border border-amber-200 rounded-xl p-4 mb-6 text-center">
+                    <p class="text-amber-800 font-semibold text-sm flex items-center justify-center gap-2">
+                        <i data-lucide="clock" class="w-4 h-4"></i>
+                        <span>Preço promocional de R$ 23 por tempo limitado — em breve volta a <strong>R$ 47</strong></span>
+                    </p>
+                </div>
+
+                <a href="https://pay.kirvano.com/d547a26e-467b-4e55-b1a0-2d06429063f3" target="_blank" class="btn-gold flex items-center justify-center gap-2 md:gap-3 w-full text-center py-4 md:py-5 px-4 rounded-xl font-bold text-sm sm:text-base md:text-xl uppercase tracking-wider shadow-lg shadow-gold/30 leading-snug">
+                    <i data-lucide="shield-check" class="w-5 h-5 md:w-6 md:h-6 shrink-0"></i> <span>Garantir Meus 2 Currículos Agora</span>
+                </a>
+
+                <!-- Meios de pagamento -->
+                <div class="flex items-center justify-center gap-4 mt-5 flex-wrap">
+                    <div class="flex items-center gap-1.5 bg-gray-100 rounded-lg px-3 py-1.5">
+                        <svg viewBox="0 0 24 24" class="w-5 h-5 text-green-600" fill="currentColor"><path d="M9.5 2C6.46 2 4 4.46 4 7.5v9C4 19.54 6.46 22 9.5 22h5c3.04 0 5.5-2.46 5.5-5.5v-9C20 4.46 17.54 2 14.5 2h-5zm.5 4h4a1 1 0 110 2h-4a1 1 0 110-2zm2 12a3 3 0 110-6 3 3 0 010 6z"/></svg>
+                        <span class="text-xs font-bold text-gray-600">Pix</span>
+                    </div>
+                    <div class="flex items-center gap-1.5 bg-gray-100 rounded-lg px-3 py-1.5">
+                        <svg viewBox="0 0 24 24" class="w-5 h-5 text-blue-600" fill="currentColor"><path d="M20 4H4a2 2 0 00-2 2v12a2 2 0 002 2h16a2 2 0 002-2V6a2 2 0 00-2-2zm0 14H4V10h16v8zm0-10H4V6h16v2z"/></svg>
+                        <span class="text-xs font-bold text-gray-600">Cartão</span>
+                    </div>
+                </div>
+
+                <p class="text-center text-sm text-gray-400 mt-4 flex items-center justify-center gap-2">
+                    <i data-lucide="lock" class="w-4 h-4"></i> Compra 100% segura. Entrega via WhatsApp após o pagamento.
+                </p>
+
+                <!-- Garantia -->
+                <div class="mt-6 pt-6 border-t border-gray-100 text-center">
+                    <div class="inline-flex flex-col items-center gap-2">
+                        <div class="w-16 h-16 rounded-full bg-green-50 border-2 border-green-200 flex items-center justify-center text-green-600">
+                            <i data-lucide="shield-check" class="w-8 h-8"></i>
+                        </div>
+                        <p class="font-heading font-bold text-navy-900 text-base">Garantia Incondicional de 7 Dias</p>
+                        <p class="text-gray-500 text-sm max-w-sm">Se por qualquer motivo você não ficar satisfeito, devolvemos <strong>100% do seu dinheiro</strong>. Sem perguntas.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final Urgency Strip -->
+    <section class="bg-gold py-6 px-6">
+        <div class="max-w-4xl mx-auto text-center">
+            <p class="text-navy-900 font-heading font-bold text-lg md:text-xl">
+                ⚡ Enquanto você pensa, alguém com o mesmo perfil que o seu já está sendo chamado para entrevista. A diferença? O currículo.
+            </p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-navy-900 border-t border-white/10 pt-16 pb-8 px-6">
+        <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
+            <div class="flex items-center gap-2">
+                <img src="ChatGPT Image 14 de mai. de 2026, 12_48_46.png" alt="Destaca Currículos" class="h-12 md:h-14 object-contain rounded-lg bg-white/5 p-1" onerror="this.outerHTML='<div class=\'font-heading font-bold text-xl text-white tracking-wide\'>DESTACA <span class=\'text-gold\'>CURRÍCULOS</span></div>'">
+            </div>
+            <p class="text-gray-500 text-sm">&copy; 2026 Destaca Currículos. Todos os direitos reservados.</p>
+            <div class="flex gap-6 text-sm text-gray-400">
+                <a href="termos.html" class="hover:text-gold transition-colors">Termos de Uso</a>
+                <a href="privacidade.html" class="hover:text-gold transition-colors">Políticas de Privacidade</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Inicializa ícones Lucide
+        lucide.createIcons();
+
+        // Efeito da Navbar ao scrollar
+        window.addEventListener('scroll', () => {
+            const nav = document.getElementById('navbar');
+            if (window.scrollY > 50) {
+                nav.classList.add('shadow-md');
+                nav.classList.remove('py-4');
+                nav.classList.add('py-2');
+            } else {
+                nav.classList.remove('shadow-md');
+                nav.classList.remove('py-2');
+                nav.classList.add('py-4');
+            }
+        });
+
+        // Animação de Reveal nos elementos
+        function reveal() {
+            var reveals = document.querySelectorAll(".reveal");
+            for (var i = 0; i < reveals.length; i++) {
+                var windowHeight = window.innerHeight;
+                var elementTop = reveals[i].getBoundingClientRect().top;
+                var elementVisible = 100;
+                if (elementTop < windowHeight - elementVisible) {
+                    reveals[i].classList.add("active");
+                }
+            }
+        }
+        window.addEventListener("scroll", reveal);
+        setTimeout(reveal, 100);
+
+        // Lógica do Carrossel de Depoimentos
+        const carousel = document.getElementById('testimonial-carousel');
+        const prevBtn = document.getElementById('prev-testimonial');
+        const nextBtn = document.getElementById('next-testimonial');
+        const indicators = document.querySelectorAll('#testimonial-indicators button');
+        let currentSlide = 0;
+        const totalSlides = 3;
+        let slideInterval;
+
+        function updateCarousel() {
+            carousel.style.transform = `translateX(-${currentSlide * 100}%)`;
+            indicators.forEach((ind, index) => {
+                if(index === currentSlide) {
+                    ind.classList.remove('bg-gray-300', 'hover:bg-gray-400');
+                    ind.classList.add('bg-gold');
+                } else {
+                    ind.classList.remove('bg-gold');
+                    ind.classList.add('bg-gray-300', 'hover:bg-gray-400');
+                }
+            });
+        }
+
+        function resetInterval() {
+            clearInterval(slideInterval);
+            slideInterval = setInterval(() => {
+                currentSlide = (currentSlide + 1) % totalSlides;
+                updateCarousel();
+            }, 6000);
+        }
+
+        if(prevBtn && nextBtn && carousel) {
+            prevBtn.addEventListener('click', () => {
+                currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
+                updateCarousel();
+                resetInterval();
+            });
+
+            nextBtn.addEventListener('click', () => {
+                currentSlide = (currentSlide + 1) % totalSlides;
+                updateCarousel();
+                resetInterval();
+            });
+
+            indicators.forEach((ind, index) => {
+                ind.addEventListener('click', () => {
+                    currentSlide = index;
+                    updateCarousel();
+                    resetInterval();
+                });
+            });
+
+            // Iniciar auto-advance
+            resetInterval();
+        }
+
+        // Lógica do Before/After Slider
+        const container = document.querySelector('.before-after-container');
+        const slider = document.querySelector('.before-after-slider');
+        const overlay = document.querySelector('.before-after-overlay');
+        const dragHint = document.getElementById('drag-hint');
+        const labelNovo = document.getElementById('label-novo');
+        const labelVelho = document.getElementById('label-velho');
+
+        if (container && slider && overlay) {
+            let isDragging = false;
+            let hintHidden = false;
+
+            const drag = (e) => {
+                if (!isDragging) return;
+                
+                if (!hintHidden && dragHint) {
+                    dragHint.style.opacity = '0';
+                    setTimeout(() => { if(dragHint) dragHint.remove(); }, 500);
+                    hintHidden = true;
+                }
+                
+                const rect = container.getBoundingClientRect();
+                let clientX = e.type.includes('touch') ? e.touches[0].clientX : e.clientX;
+                let x = clientX - rect.left;
+                
+                if (x < 0) x = 0;
+                if (x > rect.width) x = rect.width;
+                
+                const percentage = (x / rect.width) * 100;
+                
+                slider.style.left = `${percentage}%`;
+                overlay.style.clipPath = `polygon(0 0, ${percentage}% 0, ${percentage}% 100%, 0 100%)`;
+
+                if (labelNovo && labelVelho) {
+                    if (percentage > 50) {
+                        labelNovo.classList.remove('text-gray-500');
+                        labelNovo.classList.add('text-green-500');
+                        labelVelho.classList.remove('text-red-500');
+                        labelVelho.classList.add('text-gray-500');
+                    } else {
+                        labelNovo.classList.remove('text-green-500');
+                        labelNovo.classList.add('text-gray-500');
+                        labelVelho.classList.remove('text-gray-500');
+                        labelVelho.classList.add('text-red-500');
+                    }
+                }
+            };
+            
+            slider.addEventListener('mousedown', (e) => {
+                isDragging = true;
+                e.preventDefault();
+            });
+            window.addEventListener('mouseup', () => isDragging = false);
+            window.addEventListener('mousemove', drag);
+            
+            slider.addEventListener('touchstart', () => isDragging = true, {passive: true});
+            window.addEventListener('touchend', () => isDragging = false);
+            window.addEventListener('touchmove', drag, {passive: true});
+        }
+
+        // Lógica do Carrossel de Modelos
+        const modelsCarousel = document.getElementById('models-carousel');
+        const prevModelBtn = document.getElementById('prev-model');
+        const nextModelBtn = document.getElementById('next-model');
+        const modelIndicators = document.querySelectorAll('#model-indicators button');
+        
+        if (modelsCarousel && prevModelBtn && nextModelBtn) {
+            let currentModel = 0;
+            const totalModels = 4;
+            let modelInterval;
+
+            function updateModelCarousel() {
+                modelsCarousel.style.transform = `translateX(-${currentModel * 100}%)`;
+                modelIndicators.forEach((ind, index) => {
+                    if(index === currentModel) {
+                        ind.classList.remove('bg-gray-300', 'hover:bg-gray-400');
+                        ind.classList.add('bg-gold');
+                    } else {
+                        ind.classList.remove('bg-gold');
+                        ind.classList.add('bg-gray-300', 'hover:bg-gray-400');
+                    }
+                });
+            }
+
+            function resetModelInterval() {
+                clearInterval(modelInterval);
+                modelInterval = setInterval(() => {
+                    currentModel = (currentModel + 1) % totalModels;
+                    updateModelCarousel();
+                }, 6000);
+            }
+
+            prevModelBtn.addEventListener('click', () => {
+                currentModel = (currentModel - 1 + totalModels) % totalModels;
+                updateModelCarousel();
+                resetModelInterval();
+            });
+
+            nextModelBtn.addEventListener('click', () => {
+                currentModel = (currentModel + 1) % totalModels;
+                updateModelCarousel();
+                resetModelInterval();
+            });
+
+            modelIndicators.forEach((ind, index) => {
+                ind.addEventListener('click', () => {
+                    currentModel = index;
+                    updateModelCarousel();
+                    resetModelInterval();
+                });
+            });
+
+            // Swipe logic para Mobile
+            let startX = 0;
+            let isDraggingModel = false;
+
+            modelsCarousel.addEventListener('touchstart', (e) => {
+                startX = e.touches[0].clientX;
+                isDraggingModel = true;
+                clearInterval(modelInterval);
+            }, {passive: true});
+
+            modelsCarousel.addEventListener('touchend', (e) => {
+                if(!isDraggingModel) return;
+                isDraggingModel = false;
+                const endX = e.changedTouches[0].clientX;
+                const diff = endX - startX;
+                
+                if (diff < -40) {
+                    currentModel = (currentModel + 1) % totalModels;
+                } else if (diff > 40) {
+                    currentModel = (currentModel - 1 + totalModels) % totalModels;
+                }
+                
+                updateModelCarousel();
+                resetModelInterval();
+            }, {passive: true});
+
+            resetModelInterval();
+        }
+
+        // ========== EXIT-INTENT POPUP ==========
+        const exitPopup = document.getElementById('exit-popup');
+        const exitClose = document.getElementById('exit-close');
+        let exitShown = false;
+
+        function showExitPopup() {
+            if (exitShown || !exitPopup) return;
+            exitShown = true;
+            exitPopup.classList.remove('hidden');
+            exitPopup.classList.add('flex');
+            document.body.style.overflow = 'hidden';
+            lucide.createIcons();
+        }
+
+        function closeExitPopup() {
+            if (!exitPopup) return;
+            exitPopup.classList.add('hidden');
+            exitPopup.classList.remove('flex');
+            document.body.style.overflow = '';
+        }
+
+        if (exitClose) exitClose.addEventListener('click', closeExitPopup);
+        if (exitPopup) exitPopup.addEventListener('click', (e) => {
+            if (e.target === exitPopup) closeExitPopup();
+        });
+
+        // Desktop: mouse leaves viewport top
+        document.addEventListener('mouseleave', (e) => {
+            if (e.clientY <= 0) showExitPopup();
+        });
+
+        // Mobile: detect back button via popstate
+        if ('ontouchstart' in window) {
+            history.pushState(null, '', location.href);
+            window.addEventListener('popstate', () => {
+                history.pushState(null, '', location.href);
+                showExitPopup();
+            });
+        }
+    </script>
+
+    <!-- Exit-Intent Popup -->
+    <div id="exit-popup" class="hidden fixed inset-0 bg-black/70 backdrop-blur-sm z-[9999] items-center justify-center p-4 transition-all">
+        <div class="bg-white rounded-3xl max-w-md w-full p-8 md:p-10 relative shadow-2xl animate-[bounce_0.5s_ease-out_1] text-center">
+            <!-- Close -->
+            <button id="exit-close" class="absolute top-4 right-4 text-gray-400 hover:text-gray-700 transition-colors">
+                <i data-lucide="x" class="w-6 h-6"></i>
+            </button>
+
+            <!-- Icon -->
+            <div class="w-20 h-20 rounded-full bg-green-50 border-2 border-green-200 flex items-center justify-center text-green-600 mx-auto mb-5">
+                <i data-lucide="shield-check" class="w-10 h-10"></i>
+            </div>
+
+            <!-- Title -->
+            <h3 class="font-heading text-2xl md:text-3xl font-bold text-navy-900 mb-3">
+                Espere! Você sabia?
+            </h3>
+            <p class="text-gray-500 text-sm md:text-base mb-6">
+                Sua compra tem <strong class="text-navy-900">garantia incondicional de 7 dias.</strong> Se não ficar satisfeito por qualquer motivo, devolvemos 100% do valor.
+            </p>
+
+            <!-- Benefícios rápidos -->
+            <div class="bg-gray-50 rounded-2xl p-5 mb-6 text-left space-y-3">
+                <div class="flex items-center gap-3 text-sm">
+                    <div class="w-6 h-6 rounded-full bg-gold/20 flex items-center justify-center flex-shrink-0 text-gold-dark"><i data-lucide="check" class="w-4 h-4"></i></div>
+                    <span class="text-gray-700"><strong>2 currículos profissionais</strong> criados do zero</span>
+                </div>
+                <div class="flex items-center gap-3 text-sm">
+                    <div class="w-6 h-6 rounded-full bg-gold/20 flex items-center justify-center flex-shrink-0 text-gold-dark"><i data-lucide="check" class="w-4 h-4"></i></div>
+                    <span class="text-gray-700">Modelos <strong>aprovados por filtros ATS</strong></span>
+                </div>
+                <div class="flex items-center gap-3 text-sm">
+                    <div class="w-6 h-6 rounded-full bg-gold/20 flex items-center justify-center flex-shrink-0 text-gold-dark"><i data-lucide="check" class="w-4 h-4"></i></div>
+                    <span class="text-gray-700">Entrega em até <strong>24h via WhatsApp</strong></span>
+                </div>
+            </div>
+
+            <!-- Preço -->
+            <div class="mb-6">
+                <p class="text-gray-400 line-through text-sm">Consultorias cobram R$ 200+</p>
+                <div class="text-4xl font-heading font-bold text-navy-900">Tudo isso por R$ 23<span class="text-xl">,00</span></div>
+            </div>
+
+            <!-- CTA -->
+            <a href="https://pay.kirvano.com/d547a26e-467b-4e55-b1a0-2d06429063f3" target="_blank" class="btn-gold flex items-center justify-center gap-2 w-full py-4 rounded-xl font-bold text-base md:text-lg uppercase tracking-wide shadow-lg shadow-gold/30">
+                <i data-lucide="arrow-right" class="w-5 h-5"></i> Quero Meu Currículo Profissional
+            </a>
+
+            <p class="text-xs text-gray-400 mt-3 flex items-center justify-center gap-1.5">
+                <i data-lucide="lock" class="w-3 h-3"></i> Compra segura · Garantia de 7 dias · Pix ou Cartão
+            </p>
+        </div>
+    </div>
+
+</body>
+</html>

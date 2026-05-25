@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth overflow-x-hidden">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Obrigado! | Destaca Currículos</title>
+    <meta name="description" content="Seu pedido foi recebido com sucesso! Em breve você receberá seus 2 modelos de currículo premium em PDF.">
+    <meta name="robots" content="noindex, nofollow">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        heading: ['Outfit', 'sans-serif'],
+                    },
+                    colors: {
+                        navy: {
+                            900: '#0B132B',
+                            800: '#111D4A',
+                            700: '#1A2C6B',
+                            600: '#2A4396'
+                        },
+                        gold: {
+                            DEFAULT: '#D4AF37',
+                            light: '#F3E5AB',
+                            dark: '#AA8C2C',
+                        }
+                    },
+                    boxShadow: {
+                        'gold': '0 4px 20px -2px rgba(212, 175, 55, 0.3)',
+                        'gold-lg': '0 10px 30px -5px rgba(212, 175, 55, 0.4)',
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        body {
+            -webkit-font-smoothing: antialiased;
+        }
+        
+        .text-gradient-gold {
+            background: linear-gradient(135deg, #D4AF37 0%, #AA8C2C 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            color: transparent;
+        }
+        
+        .btn-gold {
+            background: linear-gradient(135deg, #D4AF37 0%, #AA8C2C 100%);
+            color: #ffffff;
+            transition: all 0.3s ease;
+        }
+        
+        .btn-gold:hover {
+            box-shadow: 0 10px 25px -5px rgba(212, 175, 55, 0.5);
+            transform: translateY(-2px);
+            background: linear-gradient(135deg, #e5c048 0%, #b8972f 100%);
+        }
+
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(40px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes scaleIn {
+            from { opacity: 0; transform: scale(0.5); }
+            to { opacity: 1; transform: scale(1); }
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+        }
+
+        @keyframes confettiPop {
+            0% { transform: scale(0) rotate(0deg); opacity: 0; }
+            50% { transform: scale(1.2) rotate(180deg); opacity: 1; }
+            100% { transform: scale(1) rotate(360deg); opacity: 1; }
+        }
+
+        @keyframes shimmer {
+            0% { background-position: -200% center; }
+            100% { background-position: 200% center; }
+        }
+
+        .animate-fadeInUp { animation: fadeInUp 0.8s cubic-bezier(0.5, 0, 0, 1) forwards; }
+        .animate-fadeInUp-delay-1 { animation: fadeInUp 0.8s cubic-bezier(0.5, 0, 0, 1) 0.2s forwards; opacity: 0; }
+        .animate-fadeInUp-delay-2 { animation: fadeInUp 0.8s cubic-bezier(0.5, 0, 0, 1) 0.4s forwards; opacity: 0; }
+        .animate-fadeInUp-delay-3 { animation: fadeInUp 0.8s cubic-bezier(0.5, 0, 0, 1) 0.6s forwards; opacity: 0; }
+        .animate-fadeInUp-delay-4 { animation: fadeInUp 0.8s cubic-bezier(0.5, 0, 0, 1) 0.8s forwards; opacity: 0; }
+        .animate-scaleIn { animation: scaleIn 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) forwards; }
+        .animate-float { animation: float 3s ease-in-out infinite; }
+        .animate-confetti { animation: confettiPop 0.8s cubic-bezier(0.34, 1.56, 0.64, 1) forwards; }
+
+        .shimmer-text {
+            background: linear-gradient(90deg, #D4AF37 0%, #F3E5AB 25%, #D4AF37 50%, #F3E5AB 75%, #D4AF37 100%);
+            background-size: 200% auto;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            animation: shimmer 3s linear infinite;
+        }
+    </style>
+</head>
+<body class="font-sans text-gray-800 bg-navy-900 overflow-x-hidden min-h-screen flex flex-col">
+
+    <!-- Navbar -->
+    <nav class="bg-white/90 backdrop-blur-md py-4 px-6 border-b border-gray-200 sticky top-0 z-50">
+        <div class="max-w-6xl mx-auto flex justify-center items-center">
+            <img src="ChatGPT Image 14 de mai. de 2026, 12_48_46.png" alt="Destaca Currículos" class="h-12 object-contain" onerror="this.outerHTML='<div class=\'font-heading font-bold text-2xl text-navy-900 tracking-wide\'>DESTACA <span class=\'text-gold\'>CURRÍCULOS</span></div>'">
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="flex-grow flex items-center justify-center px-6 py-16 md:py-24 relative">
+        <!-- Background Decorations -->
+        <div class="absolute inset-0 overflow-hidden pointer-events-none">
+            <div class="absolute w-[600px] h-[600px] bg-gold rounded-full blur-[150px] -top-40 -right-40 opacity-10"></div>
+            <div class="absolute w-[400px] h-[400px] bg-navy-600 rounded-full blur-[120px] bottom-0 -left-20 opacity-20"></div>
+        </div>
+
+        <!-- Confetti particles -->
+        <div class="absolute inset-0 overflow-hidden pointer-events-none" id="confetti-container">
+            <div class="absolute text-3xl animate-confetti" style="top: 10%; left: 15%; animation-delay: 0.1s;">🎉</div>
+            <div class="absolute text-2xl animate-confetti" style="top: 20%; right: 20%; animation-delay: 0.3s;">✨</div>
+            <div class="absolute text-3xl animate-confetti" style="top: 5%; left: 50%; animation-delay: 0.5s;">🎊</div>
+            <div class="absolute text-2xl animate-confetti" style="top: 15%; right: 10%; animation-delay: 0.7s;">⭐</div>
+            <div class="absolute text-2xl animate-confetti" style="top: 25%; left: 8%; animation-delay: 0.4s;">🌟</div>
+        </div>
+
+        <div class="max-w-2xl mx-auto text-center relative z-10">
+            <!-- Success Icon -->
+            <div class="animate-scaleIn mb-8">
+                <div class="w-24 h-24 md:w-28 md:h-28 rounded-full bg-green-500/20 border-2 border-green-500/40 flex items-center justify-center mx-auto animate-float shadow-[0_0_40px_rgba(34,197,94,0.2)]">
+                    <i data-lucide="check-circle" class="w-12 h-12 md:w-14 md:h-14 text-green-400"></i>
+                </div>
+            </div>
+
+            <!-- Heading -->
+            <h1 class="font-heading text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-4 animate-fadeInUp">
+                Pedido <span class="shimmer-text">Confirmado!</span>
+            </h1>
+
+            <p class="text-lg md:text-xl text-gray-300 mb-10 animate-fadeInUp-delay-1 leading-relaxed max-w-lg mx-auto">
+                Seu currículo profissional com <strong class="text-white">2 modelos premium em PDF</strong> já está sendo preparado pela nossa equipe.
+            </p>
+
+            <!-- Steps Card -->
+            <div class="bg-white/5 backdrop-blur-xl border border-white/10 rounded-3xl p-8 md:p-10 mb-10 animate-fadeInUp-delay-2 text-left shadow-2xl">
+                <h2 class="font-heading text-xl font-bold text-gold mb-6 text-center">Próximos Passos</h2>
+                <div class="space-y-6">
+                    <div class="flex items-start gap-4">
+                        <div class="w-10 h-10 rounded-full bg-gold/20 flex items-center justify-center flex-shrink-0 text-gold font-bold text-sm border border-gold/30">1</div>
+                        <div>
+                            <p class="text-white font-semibold">Envie suas informações</p>
+                            <p class="text-gray-400 text-sm mt-1">Nossa equipe vai entrar em contato pelo WhatsApp para coletar seus dados profissionais.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start gap-4">
+                        <div class="w-10 h-10 rounded-full bg-gold/20 flex items-center justify-center flex-shrink-0 text-gold font-bold text-sm border border-gold/30">2</div>
+                        <div>
+                            <p class="text-white font-semibold">Criação personalizada</p>
+                            <p class="text-gray-400 text-sm mt-1">Montamos seu currículo do zero, com otimização ATS e design profissional.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start gap-4">
+                        <div class="w-10 h-10 rounded-full bg-gold/20 flex items-center justify-center flex-shrink-0 text-gold font-bold text-sm border border-gold/30">3</div>
+                        <div>
+                            <p class="text-white font-semibold">Receba seus 2 PDFs</p>
+                            <p class="text-gray-400 text-sm mt-1">Entrega em até <strong class="text-white">24 horas úteis</strong> direto no seu WhatsApp.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CTA -->
+            <div class="animate-fadeInUp-delay-3 space-y-4">
+                <a href="https://wa.me/553287167287?text=Ol%C3%A1!%20Acabei%20de%20confirmar%20meu%20pedido%20no%20site.%20Quero%20enviar%20minhas%20informa%C3%A7%C3%B5es%20para%20o%20curr%C3%ADculo!" target="_blank" class="btn-gold flex items-center justify-center gap-3 w-full py-4 sm:py-5 px-4 rounded-2xl font-bold text-[13px] sm:text-base md:text-lg uppercase tracking-wider shadow-xl shadow-gold/30 active:scale-95 transition-all leading-snug">
+                    <i data-lucide="message-circle" class="w-5 h-5 sm:w-6 sm:h-6 shrink-0"></i> <span>Enviar Informações no WhatsApp</span>
+                </a>
+            </div>
+
+            <!-- Trust Badge -->
+            <div class="animate-fadeInUp-delay-4 mt-10 flex items-center justify-center gap-6 text-gray-500 text-xs">
+                <span class="flex items-center gap-1"><i data-lucide="shield-check" class="w-4 h-4 text-green-400"></i> Pagamento seguro</span>
+                <span class="flex items-center gap-1"><i data-lucide="lock" class="w-4 h-4 text-gold"></i> Dados protegidos</span>
+                <span class="flex items-center gap-1"><i data-lucide="clock" class="w-4 h-4 text-blue-400"></i> Entrega rápida</span>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-navy-900 border-t border-white/10 py-8 px-6">
+        <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4">
+            <p class="text-gray-500 text-sm">&copy; 2026 Destaca Currículos. Todos os direitos reservados.</p>
+            <div class="flex gap-6 text-sm text-gray-400">
+                <a href="termos.html" class="hover:text-gold transition-colors">Termos de Uso</a>
+                <a href="privacidade.html" class="hover:text-gold transition-colors">Políticas de Privacidade</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
